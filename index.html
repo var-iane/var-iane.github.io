@@ -2,80 +2,155 @@
 <html lang="en">
 <head>
 
-  <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
   <title>Ariane Vartanian</title>
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
   <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-  
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
 
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
 
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <!-- <link rel="icon" type="image/png" href="images/favicon.png"> -->
 
 </head>
 <body>
 
-  <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container">
     <div class="row">
       <div class="three columns" style="margin-top: 10%">
-        <h4>Ariane Vartanian</h4>
-        <!-- <p>code, visuals, and geo</p> -->
-        <p>I'm currently a scientific editor at <em>Nature Reviews Materials</em>. I love investigating the micro and the macro and experimenting with visual ways to explain them.</p>
-        <p>[image of me and bonz here!]</p>
-        <!-- <p><a href="http://github.com/var-iane">GitHub</a></p> -->
+        <section id="bio">
+          <h4>Ariane Vartanian</h4>
+          <img src="images/me.png" alt="Drawing of me and dog">
+          <!-- <p>code, visuals, and geo</p> -->
+          <p>I'm currently a scientific editor at <a href="https://www.nature.com/natrevmats/editors" target="_blank"><em>Nature Reviews Materials</em></a>. I love investigating the micro and the macro and experimenting with visual ways to explain them.<br><br>
+          <a href="mailto:ariane.vartanian@gmail.com">email</a><br>
+          <a href="http://github.com/var-iane" target="_blank">github</a></p>
+        </section>
       </div>
       <div class="nine columns" style="margin-top: 10%">
+
+        <!-- PROJECTS -->
+        <section id="projects" class="section">
           <h3>Projects</h3>
 
-          <h5><a href="http://var-iane.github.io/railtowns">The other side of the tracks</a></h5>
-          <p>A visual exploration of how the U.S. government and railroad companies worked together to aggressively settle the American West.</p>
+          <div class="media">
+            <div class="media-thumb">
+              <a href="http://var-iane.github.io/railtowns" target="_blank">
+                <img src="images/railtowns-thumb.png" alt="Screenshot of railtowns project">
+              </a>
+            </div>
+            <div class="media-body">
+              <h5>
+                <a href="http://var-iane.github.io/railtowns" target="_blank">
+                  Railtowns: The other side of the tracks
+                </a>
+              </h5>
+              <p>
+                Finding patterns in how the U.S. government and railroad companies worked together to aggressively settle the American West. A visual story told in three parts.
+                <br><br>
+                <strong>BeautifulSoup + pandas</strong> for web scraping, data cleaning, data analysis<br>
+                <strong>QGIS + Google Earth Pro</strong> for mapping and geospatial analysis<br>
+                <strong>Adobe Illustrator + Datawrapper</strong> for graphics<br>
+                <strong>GSAP</strong> for animation<br>
+                <strong>D3.js</strong> for data viz (in progress)<br>
+                <strong>Svelte</strong> for web development
+                <!-- <br><br>
+                <a href="http://github.com/var-iane" target="_blank">github</a> -->
+              </p>
+            </div>
+          </div>
 
-          <p>My aim was to tell the story in three parts, using different forms of data and visualization, to learn and implement a bunch of new skills at once. I used Python (pandas, BeautifulSoup) and QGIS for web scraping and (geo)data analysis; JavaScript (GSAP, d3), Google Earth Pro, Datawrapper, and Adobe Illustrator for graphics and animation; and Svelte for web development.</p>
+          <div class="media">
+            <div class="media-thumb">
+              <a href="http://var-iane.github.io/hybrid-fruits" target="_blank">
+                <img src="images/fruits-thumb.png" alt="Screenshot of hybrid fruits project">
+              </a>
+            </div>
+            <div class="media-body">
+              <h5>
+                <a href="http://var-iane.github.io/hybrid-fruits" target="_blank">
+                  The palette of experimental fruits
+                </a>
+              </h5>
+              <p>
+                Fruits are colorful and they taste good. But can we quantify these traits? This is an attempt to do so with a variety of unusual data. For example, I scraped patents of ~100 pluot varieties for skin and flesh color (reported with the Munsell color system), then converted those to hex codes to render a spectrum of fruit color.
+                <br><br>
+                <strong>Python (pandas, BeautifulSoup)</strong> for web scraping, data cleaning, data analysis<br>
+                <strong>Datawrapper</strong> for data visualization<br>
+              </p>
+            </div>
+          </div>
+        </section>
 
-          <h5><a href="http://var-iane.github.io/hybrid-fruits">The palette of experimental fruits</a></h5>
-          
-          <p>An attempt to quantify subjective traits of hybrid fruits, like color and taste, using whatever data I could find. For example, I used Python to scrape the patents of ~100 pluot varietals for skin and flesh color, which were reported using the Munsell color system (often used in agriculture, geology, forensics,and art). I converted the dominant Munsell codes to their closest hex codes to render them on a screen and visualize the data.</p>
-
+        <!-- GRAPHICS -->
+        <section id="graphics" class="section">
           <h3>Graphics and illustration</h3>
 
-          <h5>Gowanus zoning</h5>
-          <p>Satellite imagery of Gowanus, Brooklyn before and after rezoning.</p>
+          <div class="media">
+            <div class="media-thumb">
+              <img src="images/gowanus-rezoning.jpg" alt="Satellite imagery of Gowanus zoning">
+            </div>
+            <div class="media-body">
+              <h5>
+                Gowanus's new skyline
+              </h5>
+              <p>
+                How rezonining in Gowanus has transformed this formerly low-slung industrial neighborhood into a shiny residential hot spot.<br><br>
+                <strong>Google Earth</strong>, <strong>QGIS</strong>, and <strong>Adobe Illustrator</strong>
+              </p>
+            </div>
+          </div>
 
-          <h5>Trashy streets</h5>
+          <!-- <h5>Trashy streets</h5> -->
 
-          <h5>Dog olfaction</h5>
-          <p>A one-page comic about a dog's big sniffer.</p>
+          <div class="media">
+            <div class="media-thumb">
+              <img src="images/gagstrip.png" alt="Map of fruit trees">
+            </div>
+            <div class="media-body">
+              <h5>
+                Dog goal-faction
+              </h5>
+              <p>
+                A dog's sniffer is smarter than humans can imagine. Drawn during the "Comics for Nature and Science Storytelling" class at Cal State Monterey Bay's science illustration program.
+              </p>
+            </div>
+          </div>
 
+          <div class="media">
+            <div class="media-thumb">
+              <img src="images/fruit-trees.png" alt="Map of fruit trees">
+            </div>
+            <div class="media-body">
+              <h5>
+                Treasure map of fruit trees
+              </h5>
+              <p>
+                <strong>geoJSON</strong>, <strong>Datawrapper</strong> and <strong>Adobe Illustrator</strong>
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- WRITING -->
+        <!-- <section id="writing" class="section">
           <h3>Writing</h3>
           <p>I've written on circularity, the plastics crisis, mental health in academia</p>
+        </section>
       </div>
-    </div>
+    </div> -->
   </div>
 
-  <footer>CSS boilerplate adapted from <a href="http://getskeleton.com/">Skeleton</a></footer>
+  <!-- <footer>CSS boilerplate adapted from <a href="http://getskeleton.com/">Skeleton</a></footer> -->
 
-<!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
 </html>
