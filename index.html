@@ -1,174 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ariane Vartanian</title>
+    <link rel="icon" href="assets/favicon.svg">
 
-  <meta charset="utf-8">
-  <title>Ariane Vartanian</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geomini:wght@200..800&family=Strichpunkt+Sans:wght@400..900&family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
-  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Antic&family=Antic+Didone&family=Antic+Slab&family=BBH+Sans+Bogle&family=Boldonse&family=Hubot+Sans:ital,wght@0,200..900;1,200..900&family=Italiana&family=Matangi:wght@300..900&family=Rubik+Doodle+Shadow&family=SUSE+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css">
-
-  <!-- <link rel="icon" type="image/png" href="images/favicon.png"> -->
-
+    <link rel="stylesheet" href="css/style.css"
 </head>
+
 <body>
+    <header class="header full-bleed">
+        <div class="header-content">
+            <h1>Ariane Vartanian</h1>
+             <nav class="nav-links">
+                <a href="#projects">projects</a>
+                <a href="#graphics">graphics</a>
+                <a href="#writing">writing</a>
+                <!-- <a href="#about">about</a> -->
+            </nav>
+        </div>  
+    </header>
 
-  <div class="container">
-    <div class="row">
-      <div class="three columns" style="margin-top: 10%">
-        <section id="bio">
-          <h4>Ariane Vartanian</h4>
-          <img src="images/me.png" alt="Drawing of me and dog">
-          <!-- <p>code, visuals, and geo</p> -->
-          <p>I was most recently a scientific editor at <a href="https://www.nature.com/natrevmats/editors" target="_blank"><em>Nature Reviews Materials</em></a>. I love investigating the micro and the macro and experimenting with visual ways to explain them.<br><br>
-          <a href="mailto:ariane.vartanian@gmail.com">email</a><br>
-          <a href="http://github.com/var-iane" target="_blank">github</a></p>
+    <main>
+        <section id="hero" class="full-bleed">
+            <div class="hero-left">
+                <img src="/assets/me-transparent.png" alt="me and my dog">
+                
+            </div>
+            <p class="hero-right">
+                I investigate the micro and the macro and illuminate them with visuals.
+                <br><br>
+                I have a PhD in chemistry and was a scientific editor at <i>Nature</i> journals for ten years. I got hooked on visual data journalism at Columbia University's Lede Program and shifted careers in 2026.
+                <br><br>
+                Check out my <a href="" target="_blank">resume</a>, <a href="http://github.com/var-iane" target="_blank">github</a>, or <a href="https://www.linkedin.com/in/arianevartanian/" target="_blank">LinkedIn</a> and feel free to <a href="mailto:ariane.vartanian@gmail.com">email</a>!
+            </p>
         </section>
-      </div>
-
-      <div class="nine columns" style="margin-top: 10%">
 
         <!-- PROJECTS -->
-        <section id="projects" class="section">
-          <h3>Projects</h3>
-          <hr>
-          <div class="media">
-            <div class="media-thumb">
-              <a href="http://var-iane.github.io/railtowns" target="_blank">
-                <img src="images/rails-thumb.png" alt="Screenshot of railtowns project">
-              </a>
-            </div>
-            <div class="media-body">
-              <h5>
-                <a href="http://var-iane.github.io/railtowns" target="_blank">
-                  Railtowns: The other side of the tracks
-                </a>
-              </h5>
-              <p>
-                Finding patterns in how the U.S. government and railroad companies worked together to aggressively settle the American West. A visual story told in three parts. Methods <a href="https://github.com/var-iane/railtowns" target="_blank">here</a>.
-                <br><br>
-                <strong>Python</strong> for web scraping, data cleaning, data analysis<br>
-                <strong>QGIS + Google Earth Pro</strong> for mapping and geospatial analysis<br>
-                <strong>Adobe Illustrator</strong> for graphics<br>
-                <strong>D3 + Observable</strong> for data visualization<br>
-                <strong>JavaScript + GSAP</strong> for animation<br>
-                <strong>Svelte</strong> for web development
-              </p>
-            </div>
-          </div>
+        <section id="projects" class="full-bleed">
+            <h2>projects</h2>
 
-          <div class="media">
-            <div class="media-thumb">
-              <a href="http://var-iane.github.io/hybrid-fruits" target="_blank">
-                <img src="images/pluot-season-thumb.png" alt="Color palette of pluots">
-              </a>
-            </div>
-            <div class="media-body">
-              <h5>
-                <a href="http://var-iane.github.io/hybrid-fruits" target="_blank">
-                  The palette of pluots
+            <div class="projects-grid">
+
+                <a href="" target="_blank" class="project-card">
+                    <img src="assets/phantom-plats-thumb.png" alt="Phantom Plats screenshot">
+                    <div class="project-card-text">
+                        <h3>Phantom Plats</h3>
+                        <p>A little bit of visual forensics.</p>
+                        <div class="tools">
+                            <span class="tool">Python</span>
+                            <span class="tool">GeoPandas</span>
+                            <span class="tool">scikit-learn</span>
+                            <span class="tool">QGIS</span>
+                            <span class="tool">GSAP</span>
+                            <span class="tool">Illustrator</span>
+                            <span class="tool">Svelte</span>
+                        </div>
+                    </div>
                 </a>
-              </h5>
-              <p>
-                A look inside the obsessive world of hybrid fruit breeding, using data pulled from technical docs and taste tests.
-                <br><br>
-                <strong>Python</strong> for web scraping, data cleaning, data analysis<br>
-                <strong>Datawrapper + Adobe Illustrator</strong> for data visualization<br>
-              </p>
+
+                <a href="https://var-iane.github.io/railtowns.html" target="_blank" class="project-card">
+                    <img src="assets/railtowns-template-thumb.png" alt="Railtowns screenshot">
+                    <div class="project-card-text">
+                        <h3>Railtowns</h3>
+                        <p>Finding patterns in how the U.S. government and railroad companies worked together to aggressively settle the American West.</p>
+                        <div class="tools">
+                            <span class="tool">Python</span>
+                            <span class="tool">BeautifulSoup</span>
+                            <span class="tool">QGIS</span>
+                            <span class="tool">Observable</span>
+                            <span class="tool">GSAP</span>
+                            <span class="tool">Illustrator</span>
+                            <span class="tool">Svelte</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="" target="_blank" class="project-card">
+                    <img src="assets/bart-transit-thumb.png" alt="BART transit story screenshot">
+                    <div class="project-card-text">
+                        <h3>BART transit losses</h3>
+                        <p>A look at who stands to lose transit access if a California bill passes.</p>
+                        <div class="tools">
+                            <span class="tool">Python</span>
+                            <span class="tool">QGIS</span>
+                            <span class="tool">Illustrator</span>
+                            <span class="tool">Datawrapper</span>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="https://var-iane.github.io/march-madness-tools/bracket-viewer.html" target="_blank" class="project-card">
+                    <img src="assets/bracketviewer-thumb-2.png" alt="BracketViewer screenshot">
+                    <div class="project-card-text">
+                        <h3>BracketViewer</h3>
+                        <p>Feed in a csv of your March Madness pool's picks and scoring rules, and see in real time how many points you stand to win or lose.</p>
+                        <div class="tools">
+                            <span class="tool">JavaScript</span>
+                            <span class="tool">API calls</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="http://var-iane.github.io/hybrid-fruits" target="_blank" class="project-card">
+                    <div class="project-card-text">
+                        <img src="assets/pluot-patents-thumb.png" alt="Fruit Empires screenshot">
+                        <h3>Fruit Empires</h3>
+                        <p>How the obsessive world of hybrid fruit breeding results in more fruit colors and tastes.</p>
+                        <div class="tools">
+                            <span class="tool">Python</span>
+                            <span class="tool">BeautifulSoup</span>
+                            <span class="tool">Illustrator</span>
+                            <span class="tool">Datawrapper</span>
+                        </div>
+                    </div>
+                </a>
+                
+
             </div>
-          </div>
         </section>
 
         <!-- GRAPHICS -->
-        <section id="graphics" class="section">
-          <h3>Graphics</h3>
-          <hr>
-          <div class="media">
-            <div class="media-thumb">
-              <img src="images/gowanus-rezoning.jpg" alt="Satellite imagery of Gowanus zoning">
-            </div>
-            <div class="media-body">
-              <h5>
-                <!-- <a href="http://var-iane.github.io/gowanus-rezoning.html" target="_blank">
-                  Gowanus's new skyline
-                </a> -->
-                Gowanus's new skyline
-              </h5>
-              <p>
-                How rezonining in Gowanus has transformed this formerly low-slung industrial neighborhood into a shiny residential hot spot.<br><br>
-                <strong>Google Earth Pro</strong>, <strong>QGIS</strong>, and <strong>Adobe Illustrator</strong>
-              </p>
-            </div>
-          </div>
+        <section id="graphics" class="full-bleed">
+            <h2>graphics</h2>
+            <div class="graphics-grid">
 
-          <div class="media">
-            <div class="media-thumb">
-              <img src="images/gagstrip.png" alt="Comic of dog olfaction">
-            </div>
-            
-            <div class="media-body">
-              <h5>
-                Dog goal-faction
-              </h5>
-              <p>
-                A dog's sniffer is smarter than humans can imagine. Drawn during a "Comics for Science Storytelling" workshop at Cal State Monterey Bay's science illustration program.
-              </p>
-            </div>
-          </div>
+                <article class="graphic-card">
+                    <img src="assets/gowanus-rezoning.jpg" alt="Gowanus rezoning satellite images">
+                    <div class="graphic-card-text">
+                        <h3>Gowanus's rezoned skyline</h3>
+                        <div class="tools">
+                            <span class="tool">Google Earth Pro</span>
+                            <span class="tool">Illustrator</span>
+                        </div>
+                    </div>
+                </article>
 
-          <div class="media">
-            <div class="media-thumb">
-              <img src="images/fullerene-banner-3.png" alt="Rendered crystal structures of molecules">
-            </div>
-            
-            <div class="media-body">
-              <h5>
-                Chem complexes
-              </h5>
-              <p>
-                Molecules can be beautiful! Rendered some cool ones in 3D using real crystal structure data from <a href="https://www.nature.com/articles/s41467-018-04325-2" target="_blank">this article</a>.
-              </p>
-            </div>
-          </div>
+                <article class="graphic-card">
+                    <img src="assets/railtowns-artery-thumb.png" alt="Rail service map">
+                    <div class="graphic-card-text">
+                        <h3>Decline of American passenger rail</h3>
+                        <div class="tools">
+                            <span class="tool">QGIS</span>
+                            <span class="tool">Illustrator</span>
+                        </div>
+                    </div>
+                </article>
 
-          <!-- <div class="media">
-            <div class="media-thumb">
-              <img src="images/fruit-trees.png" alt="Map of fruit trees">
-            </div>
-            <div class="media-body">
-              <h5>
-                Fruit tree treasure map
-              </h5>
-              <p>
-                <strong>geoJSON</strong>, <strong>Datawrapper</strong> and <strong>Adobe Illustrator</strong>
-              </p>
-            </div>
-          </div> -->
-        </section> 
+                <article class="graphic-card">
+                    <img src="assets/plats-parcels-thumb.png" alt="Rail service map">
+                    <div class="graphic-card-text">
+                        <h3>United cities of parcels</h3>
+                        <div class="tools">
+                            <span class="tool">QGIS</span>
+                            <span class="tool">Illustrator</span>
+                        </div>
+                    </div>
+                </article>
 
-        <!-- WRITING -->
-        <section id="writing" class="section">
-          <h3>Writing</h3>
-          <hr>
-          <p>I've written on <a href="https://rdcu.be/e0jBz" target="_blank">why big cities like New York struggle to recycle</a>, <a href="https://rdcu.be/eJILa" target="_blank">our waste problem</a>, <a href="https://rdcu.be/d5rwB" target="_blank">decarbonization technologies</a>, <a href="https://rdcu.be/eIW2w" target="_blank">the plastics crisis</a>, and <a href="https://rdcu.be/d5rwD" target="_blank">mental health in academia</a>. I've highlighted research spanning <a href="https://rdcu.be/eQZLD"target="_blank">protein design</a>, <a href="https://rdcu.be/eQZRH" target="_blank">embryo biomechanics</a>, and <a href="https://rdcu.be/eQZQa" target="_blank">molecular polyhedra</a>.
+                <article class="graphic-card">
+                    <img src="assets/fullerene-banner-4.png" alt="3D rendering of molecule">
+                    <div class="graphic-card-text">
+                        <h3>Buckyball in a tube</h3>
+                        <div class="tools">
+                            <span class="tool">Photoshop</span>
+                            <span class="tool">Mercury</span>
+                            <span class="tool">Cambridge Structural Database</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="graphic-card">
+                    <img src="assets/gagstrip-labaroscopy.png" alt="Rail service map">
+                    <div class="graphic-card-text">
+                        <h3>Lab-aroscopy</h3>
+                        <div class="tools">
+                            <span class="tool">pencil</span>
+                        </div>
+                    </div>
+                </article>
+                
         </section>
-      </div>
-    </div>
-  </div>
 
-  <!-- <footer>CSS boilerplate adapted from <a href="http://getskeleton.com/">Skeleton</a></footer> -->
+        <section id="writing" class="full-bleed">
+            <h2>writing</h2>
+            <p>I've written on <a href="https://rdcu.be/e0jBz" target="_blank">why big cities like New York struggle to recycle</a>, <a href="https://rdcu.be/eJILa" target="_blank">our waste problem</a>, <a href="https://rdcu.be/d5rwB" target="_blank">decarbonization technologies</a>, <a href="https://rdcu.be/eIW2w" target="_blank">the plastics crisis</a>, and <a href="https://rdcu.be/d5rwD" target="_blank">mental health in academia</a>. 
+                
+            <br><br>I've highlighted research spanning <a href="https://rdcu.be/eQZLD"target="_blank">protein design</a>, <a href="https://rdcu.be/eQZRH" target="_blank">embryo biomechanics</a>, and <a href="https://rdcu.be/eQZQa" target="_blank">molecular polyhedra</a>. 
+            
+            See my <a href="https://scholar.google.com/citations?hl=en&user=Kq73qIIAAAAJ&view_op=list_works&sortby=pubdate" target="_blank">Google Scholar</a> for a full list.
+        </section>
 
+        <!-- <section id="about" class="full-bleed">
+            <h2>about</h2>
+            <p>Before entering visual journalism, I was a science editor at <i>Nature</i> journals for ten years. In 2025, I did the Lede Program in data journalism at Columbia University and instantly loved.<br><br>
+            My hobbies include scent sports with my dog, ice hockey, learning to dance, and learning to draw.
+            <br><br>
+            I'm open to opportunities! Check out my <a href="" target="_blank">resume</a>, <a href="http://github.com/var-iane" target="_blank">github</a>, or <a href="https://www.linkedin.com/in/arianevartanian/" target="_blank">LinkedIn</a> and feel free to <a href="mailto:ariane.vartanian@gmail.com">email</a>.
+            </p>
+        </section> -->
+
+    </main>
+
+    <footer class="footer full-bleed">
+        <p>Thanks for visiting!</p>
+    </footer>
+    
 </body>
+
 </html>

@@ -1,0 +1,377 @@
+/* CSS Reset: https://www.joshwcomeau.com/css/custom-css-reset/ */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+*:not(dialog) {
+  margin: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* FONTS */
+
+@font-face {
+  font-family: "Authentic Sans 60";
+  src: url("../fonts/authentic-sans-60.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Authentic Sans 90";
+  src: url("../fonts/authentic-sans-60.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Authentic Sans 130";
+  src: url("../fonts/authentic-sans-130.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Authentic Sans 150";
+  src: url("../fonts/authentic-sans-150.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --indigo: #4245a3;
+  --coral: #ff5a5f;
+  --gold: #f59e0b;
+  --navy: #011627;
+  --slate: #0f172a;
+  --medslate: #334155;
+  --lightslate: #f8fafc;
+  --lightbluegrey: #edf3f7;
+  --darkteal: #245f73;
+  --lightteal: #dce7ea;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Authentic Sans 90", "Strichpunkt Sans", sans-serif;
+}
+
+main {
+  /* display: contents; */
+}
+
+section {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  /* background-color:var(--lightbluegrey); */
+  scroll-margin-top: 10px;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Geomini", "Helvetica";
+}
+
+h1 {
+  font-family: "Authentic Sans 130", sans-serif;
+  font-size: 2.2rem;
+  letter-spacing: -0.06em;
+  line-height: 1.2;
+  color: white;
+  -webkit-text-stroke: 1px var(--navy);
+  padding: 6px 0 0 0;
+}
+
+h2 {
+  font-family: "Authentic Sans 130";
+  font-size: 2rem;
+  letter-spacing: -0.05em;
+  font-weight: 400;
+  color: var(--navy);
+  padding: 0 0 30px 0;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  /* text-decoration: underline var(--coral);
+  text-underline-offset: 3px; */
+  /* -webkit-text-stroke: 1px black; */
+}
+
+h2::after {
+  content: "";
+  flex: 1;
+  height: 1.2px;
+  background-color: var(--coral);
+}
+
+h3 {
+  /* font-family: "Epilogue"; */
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 3px 0px;
+}
+
+p {
+  font-size: 0.9rem;
+}
+
+a {
+  color: var(--indigo);
+  text-decoration: underline;
+  text-decoration-color: var(--coral);
+  text-underline-offset: 3px;
+  transition: color 0.3s ease;
+}
+
+a:hover,
+a:focus {
+  color: var(--coral);
+  outline: none;
+}
+
+.full-bleed {
+  width: 100%;
+  padding-inline: 10px;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: var(--indigo);
+  /* background-color: rgba(174, 217, 224, 0.85); */
+  /* backdrop-filter: blur(12px); */
+  border-bottom: 0.6px solid var(--navy);
+  /* height: 200px; */
+}
+
+.header-content {
+  /* margin: 0 auto; */
+  /* padding: 1rem 1.5rem; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links a {
+  color: var(--lightslate);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: var(--coral);
+}
+
+.nav-links a:active {
+  color: var(--coral);
+}
+
+.footer {
+  background-color: var(--indigo);
+  color: white;
+  display: flex;
+  height: 50px;
+  align-items: center;
+}
+
+#hero {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  justify-items: left;
+  align-items: center;
+  line-height: 1.4;
+  /* height: 200px; */
+  padding-top: 2rem;
+  padding-bottom: 0rem;
+}
+
+#hero,
+#writing,
+#about {
+  color: var(--darkteal);
+}
+
+#hero img {
+  max-width: 200px;
+  margin: 0 30px;
+}
+
+.hero-left {
+  min-width: 300px;
+}
+
+.hero-right {
+  max-width: 500px;
+}
+
+#projects {
+  /* background-color: var(--lightslate); */
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 1.5rem;
+}
+
+a.project-card {
+  display: block;
+  /* padding: 12px; */
+  /* height: 100%; */
+  text-decoration: none;
+  background-color: white;
+  color: var(--navy);
+  /* border: 1px solid var(--lightteal); */
+  /* border-radius: 6px; */
+  border: 0.25px solid var(--navy);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  will-change: transform;
+}
+
+.project-card p {
+  font-size: 0.9rem;
+}
+
+a.project-card:hover {
+  box-shadow: -3px 3px 0px 0px var(--coral);
+  transform: translate(2px, -2px);
+}
+
+.project-card img {
+  /* object-fit: contain; */
+  /* padding: 0px; */
+  /* border: 0.25px solid var(--navy); */
+  /* border-radius: 6px; */
+}
+
+.project-card-text {
+  padding: 0 6px;
+}
+
+.tools {
+  font-family: "Epilogue";
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: #9b9bad;
+  /* background-color: #ffffe3; */
+  padding-top: 3px;
+  border-top: 0.6px solid var(--navy);
+}
+
+.tool {
+  padding: 0 4px 0 0;
+}
+
+#graphics {
+  /* background-color: white; */
+}
+
+.graphics-grid {
+  column-width: 400px;
+  column-gap: 2rem;
+}
+
+.graphic-card {
+  break-inside: avoid;
+  margin-bottom: 2rem;
+  display: block;
+  /* padding: 5px; */
+  /* overflow: hidden; */
+  border: 0.25px solid var(--navy);
+}
+
+.graphic-card img {
+  margin: 0 auto;
+}
+
+.graphic-card-text {
+  padding: 0 6px;
+}
+
+#writing {
+  padding-bottom: 100vh;
+}
+
+#about {
+  padding-bottom: 100vh;
+}
+
+@media (max-width: 640px) {
+  section {
+    /* padding-block: 1.5rem; */
+  }
+}
