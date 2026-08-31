@@ -111,6 +111,11 @@ h6 {
   --lightteal: #dce7ea;
 }
 
+/* html, body {
+  overflow-x: hidden;
+  width: 100%
+} */
+
 html {
   scroll-behavior: smooth;
 }
@@ -127,7 +132,7 @@ section {
   padding-top: 3rem;
   padding-bottom: 3rem;
   /* background-color:var(--lightbluegrey); */
-  scroll-margin-top: 10px;
+  scroll-margin-top: 20px;
 }
 
 h2,
@@ -140,17 +145,19 @@ h6 {
 
 h1 {
   font-family: "Authentic Sans 130", sans-serif;
-  font-size: 2.2rem;
+  font-size: clamp(1.5rem, 6vw, 2.5rem);
+  /* font-size: 6vw; */
   letter-spacing: -0.06em;
   line-height: 1.2;
   color: white;
   -webkit-text-stroke: 1px var(--navy);
   padding: 6px 0 0 0;
+  /* white-space: nowrap; */
 }
 
 h2 {
   font-family: "Authentic Sans 130";
-  font-size: 2rem;
+  font-size: clamp(1.3rem, 5vw, 2rem);
   letter-spacing: -0.05em;
   font-weight: 400;
   color: var(--navy);
@@ -205,8 +212,6 @@ a:focus {
   top: 0;
   z-index: 10;
   background-color: var(--indigo);
-  /* background-color: rgba(174, 217, 224, 0.85); */
-  /* backdrop-filter: blur(12px); */
   border-bottom: 0.6px solid var(--navy);
   /* height: 200px; */
 }
@@ -246,21 +251,19 @@ a:focus {
   align-items: center;
 }
 
-#hero {
-  display: grid;
-  grid-template-columns: 1fr 4fr;
-  justify-items: left;
-  align-items: center;
-  line-height: 1.4;
-  /* height: 200px; */
-  padding-top: 2rem;
-  padding-bottom: 0rem;
-}
-
 #hero,
 #writing,
 #about {
   color: var(--darkteal);
+}
+
+#hero {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  line-height: 1.4;
+  padding-top: 2rem;
+  padding-bottom: 0rem;
 }
 
 #hero img {
@@ -268,11 +271,12 @@ a:focus {
   margin: 0 30px;
 }
 
-.hero-left {
+.hero-image {
   min-width: 300px;
+  flex-shrink: 0;
 }
 
-.hero-right {
+.hero-text {
   max-width: 500px;
 }
 
@@ -282,7 +286,7 @@ a:focus {
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(400px, 100%), 1fr));
   gap: 1.5rem;
 }
 
@@ -363,15 +367,30 @@ a.project-card:hover {
 }
 
 #writing {
-  padding-bottom: 100vh;
+  padding-bottom: 100svh;
 }
 
 #about {
-  padding-bottom: 100vh;
+  padding-bottom: 100dvh;
 }
 
-@media (max-width: 640px) {
-  section {
-    /* padding-block: 1.5rem; */
+@media (max-width: 600px) {
+  #hero {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-image {
+    min-width: unset;
+  }
+
+  #hero img {
+    margin: 0 0 1rem 0;
+    max-width: 200px;
+  }
+
+  .graphics-grid {
+    column-width: auto;
+    column-count: 1;
   }
 }
