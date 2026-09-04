@@ -48,7 +48,8 @@ h6 {
 }
 
 p {
-  text-wrap: pretty;
+  /* text-wrap: pretty; */
+  text-wrap: wrap;
 }
 h1,
 h2,
