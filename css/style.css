@@ -121,7 +121,7 @@ html {
 }
 
 body {
-  font-family: "Authentic Sans 90", "Strichpunkt Sans", sans-serif;
+  font-family: "Authentic Sans 90", "Helvetica", sans-serif;
 }
 
 main {
@@ -140,7 +140,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Geomini", "Helvetica";
+  font-family: "Geomini", "Epilogue", "Helvetica", sans-serif;
 }
 
 h1 {
@@ -178,10 +178,10 @@ h2::after {
 }
 
 h3 {
-  /* font-family: "Epilogue"; */
+  font-family: "Epilogue";
   font-weight: 600;
-  font-size: 0.9rem;
-  padding: 3px 0px;
+  font-size: 1rem;
+  padding: 6px 0px 0px 0px;
 }
 
 p {
@@ -286,19 +286,15 @@ a:focus {
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(400px, 100%), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(350px, 100%), 1fr));
   gap: 1.5rem;
 }
 
 a.project-card {
   display: block;
-  /* padding: 12px; */
-  /* height: 100%; */
   text-decoration: none;
   background-color: white;
   color: var(--navy);
-  /* border: 1px solid var(--lightteal); */
-  /* border-radius: 6px; */
   border: 0.25px solid var(--navy);
   transition:
     transform 0.3s ease,
@@ -307,7 +303,8 @@ a.project-card {
 }
 
 .project-card p {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
+  padding: 3px 0;
 }
 
 a.project-card:hover {
@@ -324,20 +321,22 @@ a.project-card:hover {
 
 .project-card-text {
   padding: 0 6px;
+  line-height: 1.3;
 }
 
 .tools {
   font-family: "Epilogue";
-  font-weight: 400;
-  font-size: 0.8rem;
+  font-weight: 325;
+  font-size: 0.75rem;
   color: #9b9bad;
-  /* background-color: #ffffe3; */
-  padding-top: 3px;
+  padding: 3px 0;
   border-top: 0.6px solid var(--navy);
 }
 
 .tool {
-  padding: 0 4px 0 0;
+  padding: 0 8px 0 0;
+  white-space: nowrap;
+  /* background-color:#f59e0b; */
 }
 
 #graphics {
@@ -346,12 +345,12 @@ a.project-card:hover {
 
 .graphics-grid {
   column-width: 400px;
-  column-gap: 2rem;
+  column-gap: 1.5rem;
 }
 
 .graphic-card {
   break-inside: avoid;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   display: block;
   /* padding: 5px; */
   /* overflow: hidden; */
@@ -364,6 +363,7 @@ a.project-card:hover {
 
 .graphic-card-text {
   padding: 0 6px;
+  line-height: 1.3;
 }
 
 #writing {

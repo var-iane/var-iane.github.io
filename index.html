@@ -9,7 +9,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Geomini:wght@200..800&family=Strichpunkt+Sans:wght@400..900&family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Geomini:wght@200..800&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css"
 </head>
@@ -48,14 +48,18 @@
             <div class="projects-grid">
 
                 <a href="" target="_blank" class="project-card">
-                    <img src="assets/plats-thumb.png" alt="Phantom Plats screenshot">
+                    <img src="assets/plats.png" alt="Phantom Plats screenshot">
+                    <!-- <video autoplay loop muted playsinline poster="/assets/plats-thumb.png">
+                    <source src="/assets/phantom-plats-video-fast.mp4" type="video/mp4" />
+                    </video> -->
                     <div class="project-card-text">
                         <h3>Phantom Plats</h3>
-                        <p>A bit of visual forensics: How a city</p>
+                        <p>A bit of visual forensics: Why are there fake roads in the desert?</p>
                         <div class="tools">
                             <span class="tool">Python</span>
                             <span class="tool">GeoPandas</span>
-                            <span class="tool">scikit-learn</span>
+                            <span class="tool">Overture Maps (via city2graph)</span>
+                            <span class="tool">DBSCAN clustering</span>
                             <span class="tool">QGIS</span>
                             <span class="tool">GSAP</span>
                             <span class="tool">Illustrator</span>
@@ -65,56 +69,54 @@
                 </a>
 
                 <a href="https://var-iane.github.io/railtowns" target="_blank" class="project-card">
-                    <img src="assets/railtowns-thumb.png" alt="Railtowns screenshot">
+                    <img src="assets/railtowns.png" alt="Railtowns screenshot">
                     <div class="project-card-text">
                         <h3>Railtowns</h3>
-                        <p>Finding patterns in how the U.S. government and railroad companies worked together to aggressively settle the American West.</p>
+                        <p>Visible patterns in how the U.S. government and railroad companies worked together to aggressively settle the American West.</p>
                         <div class="tools">
                             <span class="tool">Python</span>
-                            <span class="tool">BeautifulSoup</span>
                             <span class="tool">QGIS</span>
-                            <span class="tool">Observable</span>
-                            <span class="tool">GSAP</span>
                             <span class="tool">Illustrator</span>
+                            <span class="tool">GSAP</span>
                             <span class="tool">Svelte</span>
                         </div>
                     </div>
                 </a>
 
                 <a href="https://var-iane.github.io/bart-stations" target="_blank" class="project-card">
-                    <img src="assets/bart-transit-thumb.png" alt="BART transit story screenshot">
+                    <img src="assets/stations.png" alt="BART transit story screenshot">
                     <div class="project-card-text">
-                        <h3>Some of BART's at-risk stations serve riders who need it most</h3>
-                        <p>Who stands to lose transit access if a California bill passes?</p>
+                        <h3>Who loses transit access if a California bill fails?</h3>
+                        <p>Some of BART's at-risk stations serve riders who need it most.</p>
                         <div class="tools">
                             <span class="tool">Python</span>
                             <span class="tool">QGIS</span>
                             <span class="tool">Illustrator</span>
+                            <span class="tool">ai2html</span>
                             <span class="tool">Datawrapper</span>
                         </div>
                     </div>
                 </a>
                 
                 <a href="https://var-iane.github.io/march-madness-tools/bracket-viewer.html" target="_blank" class="project-card">
-                    <img src="assets/bracketviewer-thumb-2.png" alt="BracketViewer screenshot">
+                    <img src="assets/bracketviewer1.png" alt="BracketViewer screenshot">
+                    <img src="assets/bracketviewer2.png" alt="BracketViewer screenshot">
                     <div class="project-card-text">
                         <h3>BracketViewer</h3>
-                        <p>Feed in a csv of your March Madness pool's picks and scoring rules, and see in real time how many points you stand to win or lose.</p>
+                        <p>A March Madness dashboard. Feed in a csv of your pool's picks and rules, and watch your chances change in real time.</p>
                         <div class="tools">
                             <span class="tool">JavaScript</span>
-                            <span class="tool">API calls</span>
                         </div>
                     </div>
                 </a>
 
                 <a href="http://var-iane.github.io/hybrid-fruits" target="_blank" class="project-card">
                     <div class="project-card-text">
-                        <img src="assets/pluot-patents-thumb.png" alt="Fruit Empires screenshot">
+                        <img src="assets/pluot-patents.png" alt="Fruit Empire screenshot">
                         <h3>Fruit Empire</h3>
                         <p>The colors and flavors of the obsessive world of hybrid fruit breeding.</p>
                         <div class="tools">
                             <span class="tool">Python</span>
-                            <span class="tool">BeautifulSoup</span>
                             <span class="tool">Illustrator</span>
                             <span class="tool">Datawrapper</span>
                         </div>
@@ -131,7 +133,7 @@
             <div class="graphics-grid">
 
                 <article class="graphic-card">
-                    <img src="assets/gowanus-rezoning.jpg" alt="Gowanus rezoning satellite images">
+                    <img src="assets/gowanus.jpg" alt="Gowanus rezoning satellite images">
                     <div class="graphic-card-text">
                         <h3>Gowanus's rezoned skyline</h3>
                         <div class="tools">
@@ -142,7 +144,7 @@
                 </article>
 
                 <article class="graphic-card">
-                    <img src="assets/railtowns-artery-thumb.png" alt="Rail service map">
+                    <img src="assets/railmap.png" alt="Rail service map">
                     <div class="graphic-card-text">
                         <h3>Decline of American passenger rail</h3>
                         <div class="tools">
@@ -153,7 +155,7 @@
                 </article>
 
                 <article class="graphic-card">
-                    <img src="assets/plats-parcels-thumb.png" alt="Rail service map">
+                    <img src="assets/parcels.png" alt="Parcel map of Horizon City by owner clusters">
                     <div class="graphic-card-text">
                         <h3>United cities of parcels</h3>
                         <div class="tools">
@@ -164,7 +166,7 @@
                 </article>
 
                 <article class="graphic-card">
-                    <img src="assets/fullerene-banner-4.png" alt="3D rendering of molecule">
+                    <img src="assets/buckyball.png" alt="3D rendering of molecule">
                     <div class="graphic-card-text">
                         <h3>Buckyball in a tube</h3>
                         <div class="tools">
