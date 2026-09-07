@@ -48,8 +48,13 @@ h6 {
 }
 
 p {
-  /* text-wrap: pretty; */
-  text-wrap: wrap;
+  text-wrap: pretty;
+  /* text-wrap: wrap; */
+}
+@supports (-webkit-touch-callout: none) {
+  p {
+    text-wrap: wrap;
+  }
 }
 h1,
 h2,
@@ -100,7 +105,7 @@ h6 {
 }
 
 :root {
-  --indigo: #4245a3;
+  --indigo: #444AB3;
   --coral: #ff5a5f;
   --gold: #f59e0b;
   --navy: #011627;
@@ -287,7 +292,7 @@ a:focus {
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(350px, 100%), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
   gap: 1.5rem;
 }
 
@@ -345,7 +350,7 @@ a.project-card:hover {
 }
 
 .graphics-grid {
-  column-width: 400px;
+  column-width: 300px;
   column-gap: 1.5rem;
 }
 
