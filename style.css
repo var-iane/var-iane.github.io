@@ -373,11 +373,7 @@ a.project-card:hover {
 }
 
 #writing {
-  padding-bottom: 100svh;
-}
-
-#about {
-  padding-bottom: 100dvh;
+  min-height: calc(100dvh - 75px);
 }
 
 @media (max-width: 600px) {
