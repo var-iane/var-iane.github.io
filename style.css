@@ -18,7 +18,9 @@
 
 body {
   line-height: 1.5;
-  /* -webkit-font-smoothing: antialiased; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 img,
@@ -337,6 +339,7 @@ a.project-card {
   background-color: white;
   color: var(--navy);
   border: 0.25px solid var(--navy);
+  backface-visibility: hidden;
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease;
@@ -351,6 +354,7 @@ a.project-card {
 a.project-card:hover {
   box-shadow: -3px 3px 0px 0px var(--coral);
   transform: translate(2px, -2px);
+  backface-visibility: hidden;
 }
 
 .project-card img {
