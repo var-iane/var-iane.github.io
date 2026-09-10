@@ -197,10 +197,10 @@ h1 {
 }
 
 h2 {
-  font-family: "Authentic Sans 130";
+  font-family: "Authentic Sans";
   font-size: clamp(1.3rem, 5vw, 2rem);
   letter-spacing: -0.05em;
-  font-weight: 400;
+  font-weight: 600;
   color: var(--navy);
   padding: 0 0 30px 0;
   display: flex;
