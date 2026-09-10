@@ -19,8 +19,6 @@
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
 }
 
 img,
@@ -162,7 +160,7 @@ html {
 }
 
 body {
-  font-family: "Authentic Sans", "Helvetica", sans-serif;
+  font-family: "Host Grotesk", "Authentic Sans", "Helvetica", sans-serif;
   font-weight: 400;
 }
 
@@ -182,7 +180,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Geomini", "Epilogue", "Helvetica", sans-serif;
+  font-family: "Epilogue", "Helvetica", sans-serif;
 }
 
 h1 {
@@ -221,14 +219,14 @@ h2::after {
 }
 
 h3 {
-  /* font-family: "Epilogue"; */
+  /* font-family: "Host Grotesk", "Geomini"; */
   font-weight: 600;
   font-size: 1rem;
   padding: 6px 0px 0px 0px;
 }
 
 p {
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 a {
@@ -339,7 +337,6 @@ a.project-card {
   background-color: white;
   color: var(--navy);
   border: 0.25px solid var(--navy);
-  backface-visibility: hidden;
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease;
@@ -347,14 +344,13 @@ a.project-card {
 }
 
 .project-card p {
-  font-size: 0.8rem;
-  padding: 3px 0;
+  font-size: 0.9rem;
+  padding: 0 0 3px 0;
 }
 
 a.project-card:hover {
   box-shadow: -3px 3px 0px 0px var(--coral);
   transform: translate(2px, -2px);
-  backface-visibility: hidden;
 }
 
 .project-card img {
